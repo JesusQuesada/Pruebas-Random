@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package juego;
-
+import mapas.Bosque;
 import java.awt.Button;
 import java.awt.FlowLayout;
 import java.awt.Frame;
@@ -46,6 +46,10 @@ public class Juego extends Frame implements ActionListener {
         // TODO code application logic here
 
         Juego menu = new Juego();
+        Bosque boque = new Bosque();
+        
+       boque.moverse();
+        
     }
 
     @Override
