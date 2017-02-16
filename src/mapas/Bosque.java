@@ -9,11 +9,9 @@ import java.util.Scanner;
  *
  * @author Diego
  */
-public class Bosque {
+public class Bosque extends Mapas{
     
-    String direccion;
-    int nBosque;
-    Scanner sc = new Scanner(System.in);
+    
         public void moverse(){
          
             bosque1();
@@ -27,10 +25,10 @@ public class Bosque {
         System.out.println("Demasiada vegetación, solo ves un camino hacia el sur y otro al este. \n ¿Hacía donde quieres ir?");
         direccion = sc.next();
         if(direccion.equals("SUR") || direccion.equals("sur")){
-            nBosque=7;
+            nSector=7;
             comprobarDireccion();
         }else if(direccion.equals("este") || direccion.equals("ESTE")){
-            nBosque=2;
+            nSector=2;
             comprobarDireccion();
         }
         
@@ -42,10 +40,10 @@ public class Bosque {
         System.out.println("Demasiada vegetación, solo ves un camino hacia el sur y otro al este. \n ¿Hacía donde quieres ir?");
         direccion = sc.next();
         if(direccion.equals("SUR") || direccion.equals("sur")){
-            nBosque=7;
+            nSector=7;
             comprobarDireccion();
         }else if(direccion.equals("este") || direccion.equals("ESTE")){
-            nBosque=2;
+            nSector=2;
             comprobarDireccion();
         }
         
@@ -57,10 +55,10 @@ public class Bosque {
         System.out.println("Se puede ver el cielo entre los altos arboles. Vemos dos pequeños senderos hacia el sur y el este. \n ¿Hacía donde quieres ir?");
         direccion = sc.next();
         if(direccion.equals("SUR") || direccion.equals("sur")){
-            nBosque=13;
+            nSector=13;
             comprobarDireccion();
         }else if(direccion.equals("este") || direccion.equals("ESTE")){
-            nBosque=8;
+            nSector=8;
             comprobarDireccion();
         }
         
@@ -68,7 +66,7 @@ public class Bosque {
     
     
     public void comprobarDireccion(){
-        switch(nBosque){
+        switch(nSector){
             
             case 1:
                 bosque1();
