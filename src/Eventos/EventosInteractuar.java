@@ -3,23 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package mapas;
-
-import java.util.Scanner;
+package Eventos;
 
 /**
  *
  * @author Diego
  */
-public class Mapas {
-    String direccion;
-    int nSector,nEventoAgresion, nEventos;
-    Scanner sc = new Scanner(System.in);
+public class EventosInteractuar {
     
-    public  void comprobarCardinales(String direccion){
+     public void hablarMercader(){
+        System.out.println("Bienvenido joven viajero.\n ¿Que deseas?");
         
-    
-
+        
     }
     
 }

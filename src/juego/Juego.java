@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package juego;
-import mapas.Bosque;
+import mapas.*;
 import java.awt.Button;
 import java.awt.FlowLayout;
 import java.awt.Frame;
@@ -47,8 +47,8 @@ public class Juego extends Frame implements ActionListener {
 
         Juego menu = new Juego();
         Bosque boque = new Bosque();
-        
-       boque.moverse();
+        Pueblo_Coral pueblo1 = new Pueblo_Coral();
+        pueblo1.tienda_Coral();
         
     }
 
